@@ -1,7 +1,8 @@
 import boto3
 
 resource=boto3.resource("s3")
-list(resource.buckets.all())
+
+#print()
 
 for bucket in resource.buckets.all():
-    print(bucket.name)
+    print(bucket)
