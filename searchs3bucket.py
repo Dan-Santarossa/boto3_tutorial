@@ -5,4 +5,4 @@ resource=boto3.resource("s3")
 #print()
 
 for bucket in resource.buckets.all():
-    print(bucket)
+    print(bucket.name)
