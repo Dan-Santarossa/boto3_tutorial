@@ -5,11 +5,7 @@ s3_resource=boto3.client("s3")
 s3_resource.delete_object(Bucket='totaltech',
     Key='multipletest.txt')
     
-#delete multiple objects from bucket
-import os
-import glob
-
-#cwd=os.getcwd()
+#cwd=os.getcwd() < find cwd
 #find all the object from the bucket
 objects=s3_resource.list_objects(Bucket="totaltech")["Contents"]
 print(objects)
