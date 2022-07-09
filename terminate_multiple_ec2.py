@@ -1,5 +1,5 @@
 import boto3
-ec2_client=boto3.client("ec2", "us-east-2")#created new pile of ec2s in us-east-2 for termination 
+ec2_client=boto3.client("ec2", "us-east-1")#created new pile of ec2s in us-east-2 for termination 
 
 x=ec2_client.describe_instances()
 
