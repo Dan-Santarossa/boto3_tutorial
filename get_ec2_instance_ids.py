@@ -9,3 +9,4 @@ for i in range (len(data_instance)):
     print(f"instance id is {data_instance[i]['InstanceId']}")
 
 #only getting the result of one instance ID. it is t he result of whatever int in on the 6th line
+pprint.pprint(x)
